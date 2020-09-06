@@ -1,0 +1,254 @@
+/*zelena boja #79f7da*/
+/* background-color: rgb(10, 25, 47);*/
+/*siva boja color: rgb(136, 146, 176);*/
+
+/*
+fontovi koje koristim su 
+ "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+*/
+
+/*font-family: 'Fira Mono', monospace;
+font-family: 'Fira Code', monospace;
+font-family: 'Roboto Mono', monospace;
+*/
+body {
+    background-color: rgb(10, 25, 47);
+    color: rgb(136, 146, 176);
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-family: 'Fira Code', monospace;
+    color: rgb(136, 146, 176);
+    text-align: center;
+}
+
+.menu,
+a:hover {
+    color: #79f7da;
+}
+
+.menu,
+ul {
+    list-style-type: none;
+}
+
+.logo-menu {
+    display: block;
+    padding: 14px;
+    color: #79f7da;
+    font-size: 23px;
+}
+
+.home-vp {
+    height: 100vh;
+}
+
+.resume-button {
+    padding: 10px;
+    border: 1px solid #79f7da;
+    border-radius: 3px;
+}
+
+.me-first-page {
+    color: #79f7da;
+    font-family: 'Fira Code', monospace;
+}
+
+.me-text-page {
+    font-family: 'Fira Mono', monospace;
+    font-weight: bolder;
+}
+
+.header-of-tabs{
+    text-align: center;
+}
+
+.email-button {
+    border: 1px solid #79f7da;
+    height: 40px;
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.icon-send {
+    display: none;
+    font-size: 19px;
+}
+
+.louder {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    background-color: #191f26;
+    overflow-y: hidden;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#about-me {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+#my-work {
+    height: 100vh;
+    width: 100%;
+    /* padding-top: 10%; */
+}
+
+#bac-to-top {
+    position: fixed;
+    top: 90%;
+    left: calc(100vw - 70px);
+    color: #79f7da;
+    font-size: 45px;
+    cursor: pointer;
+
+}
+
+.about-me-content {
+    border: 1px solid #79f7da;
+    font-family: 'Fira Code', monospace;
+    padding: 10px;
+    
+}
+.about-me-content-position{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.about-me-content span {
+    color: #79f7da;
+}
+
+.table-skills td {
+    padding: 7px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.position-home{
+    position: relative;
+    top:20%;
+}
+.contact-line{
+    position: fixed;
+    z-index: 1000;
+    height: 200px;
+    width: 50px;
+    display: block;
+    top: 75vh;
+    left:20px;
+
+    
+}
+.contact-line p{
+    position: relative;
+    left: 30%;
+    
+}
+.contact-line-line{
+    height: 130px;
+    width: 1px;
+    background-color: #79f7da;
+    left: 50%;
+    position: relative;
+    
+}
+.my_work-frame{
+    border-color: #79f7da;
+    /* width: 25vw;
+    height: 30vh; */
+
+    /* -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0; */
+  
+
+}
+/*
+.fix-menu{
+    position: fixed;
+}
+*/
+
+/*flex*/
+@media screen and (min-width: 900px) {
+
+    .menu,
+    ul {
+        display: flex;
+    }
+
+    .menu,
+    li {
+        flex: 1 0 0;
+    }
+}
+/*Skirvanje contactline*/
+@media screen and (max-width: 900px){
+    .contact-line{
+        display: none;
+    }
+    .navigation-line{
+        display: none;
+    }
+}
+
+
+/* Podesavanje navigacije  na mobilnom se vidi samo bars*/
+.fa-bars{
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    top: -45px;
+    cursor: pointer;
+    
+}
+
+/* Modali */
+.milica-stanojevic-modal{
+    position: absolute;
+    left: 60%;
+    transform: translateY(-60%);
+    /* -webkit-box-shadow: 0px 0px 46px 20px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 46px 20px rgba(255,255,255,1);
+    box-shadow: 0px 0px 46px 20px rgba(255,255,255,1); */
+    z-index: 10;
+    display: none;
+}
+
+.modal-size{
+    width: 50vW;
+    height: 50vh;
+}
+
+.fa-times{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.portfolio-box{
+    margin-top: 20px;
+}
